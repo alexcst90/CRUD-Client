@@ -1,0 +1,17 @@
+server:
+  port: 9006
+  
+  
+spring:
+  application:
+    name: crudcliente
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone:  http://localhost:8761/eureka/
+
+logging:
+  level:
+    org.exampledriven.eureka.customer.shared.CustomerServiceFeignClient: FULL
+    org.exampledriven.eureka: DEBUG  
